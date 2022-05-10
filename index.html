@@ -1,13 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Full Stack Portfolio</title>
-  </head>
-  <body>
 
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Stylish form</title>
+</head>
+
+<body>
+  <main>
+
+    <header>
+      <h1>Say Hello!</h1>
+    </header>
+
+    <section>
+
+      <form>
+
+        <label for="name">
+          <p>Your Name</p>
+          <input type="text" id="name" placeholder="Enter your name">
+        </label>
+
+
+        <label for="email">
+          <p>Email</p>
+          <input type="email" id="email" placeholder="Enter your email address">
+        </label>
+
+
+        <label for="service">
+
+          <p>Needed Services</p>
+
+          <div class="select">
+            <select name="service" id="service">
+
+              <option value="" disabled selected hidden>
+                <p>Choose Services</p>
+              </option>
+
+              <option value="cat-coding">
+                <p>Cat Coding</p>
+              </option>
+
+              <option value="cat-plumbing">
+                <p>Cat Plumbing</p>
+              </option>
+
+              <option value="cat-cooking">
+                <p>Cat Cooking</p>
+              </option>
+
+              <option value="cat-driving">
+                <p>Cat Driving</p>
+              </option>
+
+            </select>
+          </div>
+
+        </label>
+
+
+        <label for="budget">
+
+          <p>Budget</p>
+
+          <div class="select">
+            <select name="budget" id="budget">
+
+              <option value="" disabled selected hidden>
+                <p>Select Budget</p>
+              </option>
+
+              <option value="£20-50">
+                <p>£20 - £50</p>
+              </option>
+
+              <option value="£50-80">
+                <p>£50 - £80</p>
+              </option>
+
+              <option value="£100+">
+                <p>£100 + </p>
+              </option>
+
+            </select>
+          </div>
+
+        </label>
+
+
+        <label for="message">
+
+          <p>Message</p>
+
+          <textarea name="message" id="message" cols="30" rows="5" placeholder="Your message here..."></textarea>
+
+        </label>
+
+
+        <button type="submit">
+          <p>Submit &#8594</p>
+        </button>
+
+      </form>
+    </section>
+
+  </main>
+</body>
+
 </html>
