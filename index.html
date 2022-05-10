@@ -20,24 +20,26 @@
 
       <form>
 
-        <label for="name">
-          <p>Your Name</p>
-          <input type="text" id="name" placeholder="Enter your name">
-        </label>
+        <fieldset>
+          <label for="name">
+            <p>Your Name</p>
+            <input type="text" id="name" placeholder="Enter your name" required>
+          </label>
+        </fieldset>
 
-
-        <label for="email">
-          <p>Email</p>
-          <input type="email" id="email" placeholder="Enter your email address">
-        </label>
-
+        <fieldset>
+          <label for="email">
+            <p>Email</p>
+            <input type="email" id="email" placeholder="Enter your email address" required>
+          </label>
+        </fieldset>
 
         <label for="service">
 
           <p>Needed Services</p>
 
           <div class="select">
-            <select name="service" id="service">
+            <select name="service" id="service" required>
 
               <option value="" disabled selected hidden>
                 <p>Choose Services</p>
