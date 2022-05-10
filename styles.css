@@ -162,3 +162,11 @@ input:valid {
     border-radius: 0.5rem;
     background-color: #ddffdd;
 }
+
+label:hover input,
+label:hover select,
+label:hover textarea,
+label:hover textarea::placeholder {
+    color: #58BDE0;
+    border-color: #58BDE0;
+}
