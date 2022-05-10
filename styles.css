@@ -28,7 +28,6 @@ textarea::placeholder {
     font-size: 1rem;
 }
 
-
 body {
     line-height: 2rem;
 
@@ -63,23 +62,36 @@ fieldset {
     border: none;
 }
 
+input,
+select,
+textarea {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1.5px solid #c2c1c3;
+}
+
+input,
+select,
+textarea {
+    outline: none;
+
+    font-size: 1rem;
+
+    width: 100%;
+    padding: 0.5rem 0.25rem;
+}
+
 select {
     font-weight: 600;
-    font-size: 1rem;
     appearance: none;
     background-color: transparent;
-    width: 100%;
-    padding-left: 0.25rem;
-    padding-bottom: 1rem;
-
-    outline: none;
 
     cursor: inherit;
 }
 
 .select {
     width: 100%;
-    height: fit-content;
     background-image: linear-gradient(to top, #f9f9f9, #FFF 33%);
 
     cursor: pointer;
@@ -91,8 +103,8 @@ select {
 
 .select::after {
     content: "";
-    width: 0.8em;
-    height: 0.5em;
+    width: 0.8rem;
+    height: 0.5rem;
     background-color: #616161;
     clip-path: polygon(100% 0%, 0 0%, 50% 100%);
     justify-self: end;
@@ -101,25 +113,6 @@ select {
 select,
 .select:after {
     grid-area: select;
-}
-
-input,
-select,
-textarea {
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 1.5px solid #c2c1c3;
-}
-
-input,
-textarea {
-    outline: none;
-
-    font-size: 1rem;
-
-    width: 100%;
-    padding-left: 0.25rem;
 }
 
 button {
@@ -136,21 +129,15 @@ button {
     background-image: linear-gradient(to right, #E43CF6, #61D6DA);
 }
 
-button p {
-    display: inline;
-
+button p,
+footer p {
     font-weight: 600;
 }
 
 footer {
     grid-area: footer;
 
-    margin-bottom: 1rem;
-}
-
-footer p {
-    font-size: 1rem;
-    font-weight: 600;
+    margin: 1rem;
 }
 
 fieldset:invalid~fieldset {
@@ -164,11 +151,6 @@ button:hover {
 form:invalid button {
     opacity: 0.6;
     pointer-events: none;
-}
-
-
-input {
-    padding-bottom: 0.75rem;
 }
 
 input:required,
